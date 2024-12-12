@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Trees</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  {% load static %}
+  <script defer src="{% static 'script.js'%}"></script>
+
+</head>
+
+<body class="bg-[url(../static/tree-bg.jpg)] h-screen w-screen">
+  <div class="bg-black flex items-center gap-3 justify-center bg-opacity-65 w-full h-full fixed z-[1]">
+    <div class="bg-white w-[30%] h-fit   bg-opacity-40 p-4 rounded-lg border">
+      <h1 class="text-white text-center text-2xl font-bold " >How to Use</h1>
+       <p class="text-center text-white text-semibold">
+        Spend just 10 minutes on our site and contribute to reforestation efforts! By staying engaged, you’ll directly support tree-planting initiatives that help combat climate change, restore ecosystems, and create a greener future. Your time makes a difference—every minute counts toward planting more trees and building a sustainable planet. Together, we can grow a forest of change!
+       </p>
+    </div>
+    <div class="bg-white w-[30%] h-fit   bg-opacity-40 p-4 rounded-lg border">
+      <nav class=" p-3 flex flex-col items-center justify-center">
+        <h1 class="text-center  z-[1] text-white text-6xl font-bold"><span class="text-yellow-500">Eco</span>Tree</h1>
+        {% load static%}
+        <img src="{% static 'mere.png'%}"  alt="">
+        <p id="tree" class="text-5xl font-bold text-white mb-1">1</p>
+        <p class="text-xl font-bold text-white mb-4">Total Tree Planted </p>
+        <button id="startBtn" class="bg-gradient-to-r from-yellow-500 to-orange-600 hover:scale-110 transition  font-xl text-white text-center px-5 py-2 rounded-full font-semibold">Start Planting</button>
+        <p class="text-white text-center mt-2 w-[70%]">Welcome to Tree Mining Charity, a pioneering organization dedicated to transforming environmental conservation through innovative practices. Our mission is to protect, restore, and enhance forest ecosystems while providing </p>
+         
+      
+      </nav>
+    </div>
+
+    <div class="bg-white w-[30%] h-fit   bg-opacity-40 p-4 rounded-lg border">
+      <h1 class="text-white text-center text-2xl font-bold " >About Us</h1>
+      <p class="text-center text-white text-semibold">
+        we are committed to the planet’s well-being. Our mission is simple:
+    to make the world a greener place, one tree at a time. Through innovative reforestation initiatives, educational campaigns, and collaborations with local communities, we aim to restore ecosystems and enhance biodiversity.
+      </p>
+    </div>
+
+     
+  </div>
+</body>
+
+</html>
